@@ -11,9 +11,10 @@ public class Main_eratosthenes {
 		Integer num = 0;
 		try {
 			num = Integer.parseInt(args[0]);
-		} catch (ClassCastException e) {
+		} catch (NumberFormatException e) {
 			// 数字でない場合エラー表示
 			System.out.println(EXCEPTION_MESSAGE);
+			return;
 		}
 
 		// 指定された数を配列に格納
